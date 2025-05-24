@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCInformation.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCXXInformation.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeGenericSystem.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeRCInformation.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Compiler/MSVC-C.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Compiler/MSVC-CXX.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Compiler/MSVC.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Platform/Windows-MSVC-C.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Platform/Windows.cmake
+C:/Users/satya/AppData/Local/Programs/Python/Python312/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+E:/Automotive Mobile System/CMakeLists.txt
+E:/Automotive Mobile System/build/CMakeFiles/3.30.1/CMakeCCompiler.cmake
+E:/Automotive Mobile System/build/CMakeFiles/3.30.1/CMakeCXXCompiler.cmake
+E:/Automotive Mobile System/build/CMakeFiles/3.30.1/CMakeRCCompiler.cmake
+E:/Automotive Mobile System/build/CMakeFiles/3.30.1/CMakeSystem.cmake

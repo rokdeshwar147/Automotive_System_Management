@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Automotive Mobile System\build\CMakeFiles\e08784b734659bbd451eba8023e51b2d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1FAEB220-CEFC-3199-B998-B0F5A6A7EE11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+E:/Automotive Mobile System/build/CMakeFiles/sqlite3.dir
+E:/Automotive Mobile System/build/CMakeFiles/init_database.dir
+E:/Automotive Mobile System/build/CMakeFiles/ALL_BUILD.dir
+E:/Automotive Mobile System/build/CMakeFiles/ZERO_CHECK.dir

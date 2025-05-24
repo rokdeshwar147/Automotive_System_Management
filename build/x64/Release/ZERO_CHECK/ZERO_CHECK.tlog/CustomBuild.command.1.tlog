@@ -1,0 +1,10 @@
+^E:\AUTOMOTIVE MOBILE SYSTEM\BUILD\CMAKEFILES\E08784B734659BBD451EBA8023E51B2D\GENERATE.STAMP.RULE
+setlocal
+C:\Users\satya\AppData\Local\Programs\Python\Python312\Lib\site-packages\cmake\data\bin\cmake.exe "-SE:/Automotive Mobile System" "-BE:/Automotive Mobile System/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "E:/Automotive Mobile System/build/AutomotiveSystem.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
