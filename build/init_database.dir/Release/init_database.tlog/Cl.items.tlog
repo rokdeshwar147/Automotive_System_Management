@@ -1,8 +1,10 @@
 E:\Automotive Mobile System\main.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\main.obj
 E:\Automotive Mobile System\DatabaseManager.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\DatabaseManager.obj
+E:\Automotive Mobile System\SchemaInitializer.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\SchemaInitializer.obj
 E:\Automotive Mobile System\VehicleManager.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\VehicleManager.obj
 E:\Automotive Mobile System\DTCManager.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\DTCManager.obj
 E:\Automotive Mobile System\RealTimeMonitor.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\RealTimeMonitor.obj
 E:\Automotive Mobile System\AlertManager.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\AlertManager.obj
 E:\Automotive Mobile System\AnalyticsManager.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\AnalyticsManager.obj
 E:\Automotive Mobile System\UserManager.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\UserManager.obj
+E:\Automotive Mobile System\ReportGenerator.cpp;E:\Automotive Mobile System\build\init_database.dir\Release\ReportGenerator.obj

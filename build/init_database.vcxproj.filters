@@ -7,6 +7,9 @@
     <ClCompile Include="E:\Automotive Mobile System\DatabaseManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\Automotive Mobile System\SchemaInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\Automotive Mobile System\VehicleManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -23,6 +26,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="E:\Automotive Mobile System\UserManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Automotive Mobile System\ReportGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

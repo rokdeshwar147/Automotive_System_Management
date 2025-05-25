@@ -1,0 +1,10 @@
+
+--- Vehicle Summary ---
+ID: 1, Make: Toyota, Model: Corolla X, Year: 2021, VIN: JTBDL40E799026107, Fuel: Petrol
+
+--- DTC Summary ---
+Vehicle ID: 1, Code: , Desc: , Severity: 
+
+--- Alerts Summary ---
+Vehicle ID: 1, Time: Sun May 25 13:30:26 2025, Type: DTC Detected, Desc: DTC Code:  - 
+Vehicle ID: 1, Time: Sun May 25 13:30:19 2025, Type: Engine RPM, Desc: Engine speed exceeded safe limit

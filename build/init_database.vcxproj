@@ -334,12 +334,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="E:\Automotive Mobile System\main.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\DatabaseManager.cpp" />
+    <ClCompile Include="E:\Automotive Mobile System\SchemaInitializer.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\VehicleManager.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\DTCManager.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\RealTimeMonitor.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\AlertManager.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\AnalyticsManager.cpp" />
     <ClCompile Include="E:\Automotive Mobile System\UserManager.cpp" />
+    <ClCompile Include="E:\Automotive Mobile System\ReportGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="E:\Automotive Mobile System\build\ZERO_CHECK.vcxproj">

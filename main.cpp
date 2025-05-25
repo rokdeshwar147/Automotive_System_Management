@@ -5,6 +5,10 @@
 #include "AlertManager.h"
 #include "AnalyticsManager.h"
 #include "UserManager.h"
+#include "SchemaInitializer.h"
+#include "ReportGenerator.h"
+
+
 
 
 #include <iostream>
@@ -26,6 +30,9 @@ void showMenu() {
     std::cout << "12. Check DTC Alerts\n";
      std::cout << "13. View Vehicle Performance Metrics\n";
     std::cout << "14. View Most Frequent DTCs\n";
+        std::cout << "15. View Full Report\n";
+    std::cout << "16. Export Report to File\n";
+
     std::cout << "Choose option: ";
 }
 
@@ -38,49 +45,41 @@ int main() {
         return -1;
     }
 
+      SchemaInitializer schema(dbManager);
+    schema.initialize();
+
     VehicleManager vehicleManager(dbManager);
     DTCManager dtcManager(dbManager);
      RealTimeMonitor rtMonitor(dbManager);
      AlertManager alertManager(dbManager);
       AnalyticsManager analytics(dbManager);
        UserManager userManager(dbManager);
-    
-    int initChoice = -1;
+       ReportGenerator reportGen(dbManager);
+     sqlite3* db = dbManager.getDB();
+    sqlite3_stmt* stmt;
 
-    // Loop until valid choice (0 = Register, 1 = Login)
-    while (true) {
-        std::cout << "Welcome! Please select an option:\n";
-        std::cout << "0 - Register New User\n";
-        std::cout << "1 - Login\n";
-        std::cout << "Enter choice: ";
+    int userCount = 0;
 
-        if (!(std::cin >> initChoice)) {
-            std::cin.clear(); // Clear error flag
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-            std::cout << "Invalid input. Please enter 0 or 1.\n";
-            continue;
+    std::string userCheck = "SELECT COUNT(*) FROM Users;";
+    if (sqlite3_prepare_v2(db, userCheck.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
+        if (sqlite3_step(stmt) == SQLITE_ROW) {
+            userCount = sqlite3_column_int(stmt, 0);
         }
-
-        if (initChoice == 0) {
-            userManager.registerUser();
-            // After registration, you might want to allow login or auto-login
-            std::cout << "Please login to continue.\n";
-            // Fall through to login prompt
-            initChoice = 1; 
-        }
-
-        if (initChoice == 1) {
-            std::cout << "--- Login Required ---\n";
-            if (userManager.loginUser()) {
-                break; // Successful login, proceed
-            } else {
-                std::cout << "Access denied. Try again.\n";
-                // Optionally, limit login attempts or provide option to register again
-            }
-        } else {
-            std::cout << "Invalid choice. Please enter 0 to Register or 1 to Login.\n";
-        }
+        sqlite3_finalize(stmt);
     }
+
+    if (userCount == 0) {
+        std::cout << "No users found. Please register an admin user.\n";
+        userManager.registerUser();
+    }
+
+    std::cout << "--- Login Required ---\n";
+    if (!userManager.loginUser()) {
+        std::cout << "Access denied.\n";
+        return 1;
+    }
+
+    
 
 
     while (true) {
@@ -106,6 +105,16 @@ int main() {
             case 12: alertManager.checkForDTCAlerts(); break;
             case 13: analytics.showVehiclePerformanceMetrics(); break;
             case 14: analytics.showFrequentDTCs(); break;
+            
+    case 15: reportGen.generateConsoleReport(); break;
+    case 16: {
+        std::string file;
+        std::cout << "Enter filename (e.g., report.txt): ";
+        std::getline(std::cin, file);
+        reportGen.exportReportToFile(file);
+        break;
+    }
+            
             default: std::cout << "Invalid choice.\n";
         }
     }
